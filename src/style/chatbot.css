@@ -1,0 +1,99 @@
+/* ChatGPT Styles */
+.chatgpt-container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.chat-header {
+  background-color: #007bff;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 75%;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.user-message {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.ai-message {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.typing-indicator {
+  font-style: italic;
+  color: #555;
+  margin-left: 10px;
+}
+
+.message-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.send-button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.send-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.send-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
