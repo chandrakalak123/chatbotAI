@@ -9,7 +9,7 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-const genAI = new GoogleGenerativeAI("AIzaSyCfSqgOm7Hp0rKxi_AeL_4YHPRnCdF0gIo",{
+const genAI = new GoogleGenerativeAI("xxxxxxxxxxxxxxxxx",{
   apiVersion: "v1"  // Ensure stable version
 });
 
